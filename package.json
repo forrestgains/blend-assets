@@ -1,0 +1,12 @@
+{
+  "name": "blend-assets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/forrestgains/forrestgains.github.io.git",
+  "author": "forrestgains <forrestgains1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
