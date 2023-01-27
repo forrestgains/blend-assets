@@ -98193,7 +98193,16 @@
     "id": "DASH_DASH.null",
     "blockchain": "DASH",
     "symbol": "DASH",
-    "image": "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/dash_dashcoin-512.png",
+    "image": "https://forrestgains.github.io/icons/dash.png",
+    "address": null,
+    "decimals": 8,
+    "name": null
+  },
+  {
+    "id": "ZCASH_ZCASH.null",
+    "blockchain": "ZCASH",
+    "symbol": "ZCASH",
+    "image": "https://forrestgains.github.io/icons/zcash.png",
     "address": null,
     "decimals": 8,
     "name": null
