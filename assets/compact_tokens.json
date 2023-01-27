@@ -98188,5 +98188,14 @@
     "address": "ibc/f2331645b9683116188ef36fc04a809c28bd36b54555e8705a37146d0182f045",
     "decimals": 6,
     "name": null
+  },
+  {
+    "id": "DASH_DASH.null",
+    "blockchain": "DASH",
+    "symbol": "DASH",
+    "image": "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/dash_dashcoin-512.png",
+    "address": null,
+    "decimals": 8,
+    "name": null
   }
 ]
