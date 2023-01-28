@@ -98206,5 +98206,14 @@
     "address": null,
     "decimals": 8,
     "name": null
+  },
+  {
+    "id": "CANTO_CANTO.null",
+    "blockchain": "CANTO",
+    "symbol": "CANTO",
+    "image": "https://forrestgains.github.io/icons/canto.png",
+    "address": null,
+    "decimals": 18,
+    "name": null
   }
 ]
