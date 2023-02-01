@@ -98233,5 +98233,41 @@
     "address": "0x826551890Dc65655a0Aceca109aB11AbDbD7a07B",
     "decimals": 18,
     "name": "wCANTO"
+  },
+  {
+    "id": "CANTO_ETH.0x5FD55A1B9FC24967C4dB09C513C3BA0DFa7FF687",
+    "blockchain": "CANTO",
+    "symbol": "ETH",
+    "image": "https://api.rango.exchange/i/MTyH5i",
+    "address": "0x5FD55A1B9FC24967C4dB09C513C3BA0DFa7FF687",
+    "decimals": 18,
+    "name": "Ethereum"
+  },
+  {
+    "id": "CANTO_USDC.0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd",
+    "blockchain": "CANTO",
+    "symbol": "USDC",
+    "image": "https://api.rango.exchange/i/toXKGV",
+    "address": "0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd",
+    "decimals": 18,
+    "name": "USDC"
+  },
+  {
+    "id": "CANTO_USDT.0xd567B3d7B8FE3C79a1AD8dA978812cfC4Fa05e75",
+    "blockchain": "CANTO",
+    "symbol": "USDT",
+    "image": "https://api.rango.exchange/i/aR1yFx",
+    "address": "0xd567B3d7B8FE3C79a1AD8dA978812cfC4Fa05e75",
+    "decimals": 18,
+    "name": "USDT"
+  },
+  {
+    "id": "CANTO_ATOM.0xecEEEfCEE421D8062EF8d6b4D814efe4dc898265",
+    "blockchain": "CANTO",
+    "symbol": "ATOM",
+    "image": "https://api.rango.exchange/i/rRMA3c",
+    "address": "0xecEEEfCEE421D8062EF8d6b4D814efe4dc898265",
+    "decimals": 18,
+    "name": "ATOM"
   }
 ]
