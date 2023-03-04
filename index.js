@@ -27,6 +27,11 @@ async function getAllTokens() {
   const tokensConsole = new console.Console(
     fs.createWriteStream(`./assets/compact_tokens.json`)
   );
+  const blockchainsConsole = new console.Console(
+    fs.createWriteStream(`./assets/blockchains.json`)
+  );
+
+  blockchainsConsole.log(JSON.stringify(allMeta.blockchains));
   tokensConsole.log(JSON.stringify(allTokens));
 }
 

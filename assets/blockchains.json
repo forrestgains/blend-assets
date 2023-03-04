@@ -254,14 +254,82 @@
     }
   },
   {
-    "name": "TERRA",
+    "name": "COSMOS",
+    "defaultDecimals": 6,
+    "addressPatterns": ["^(cosmos1)[0-9a-z]{38}$"],
+    "feeAssets": [
+      { "blockchain": "COSMOS", "symbol": "ATOM", "address": null }
+    ],
+    "logo": "https://api.rango.exchange/blockchains/cosmos.svg",
+    "displayName": "Cosmos",
+    "shortName": "Cosmos",
+    "sort": 8,
+    "color": "#2E3148",
+    "enabled": true,
+    "type": "COSMOS",
+    "chainId": "cosmoshub-4",
+    "info": {
+      "infoType": "CosmosMetaInfo",
+      "experimental": false,
+      "rpc": "https://cosmos-rpc.polkachu.com",
+      "rest": "https://lcd-cosmoshub.keplr.app",
+      "cosmostationLcdUrl": "https://lcd-cosmos.cosmostation.io",
+      "cosmostationApiUrl": "https://api-cosmos.cosmostation.io",
+      "cosmostationDenomTracePath": "/ibc/apps/transfer/v1/denom_traces/",
+      "mintScanName": "cosmos",
+      "chainName": "Cosmos",
+      "stakeCurrency": {
+        "coinDenom": "ATOM",
+        "coinMinimalDenom": "uatom",
+        "coinDecimals": 6,
+        "coinGeckoId": "cosmos",
+        "coinImageUrl": "/tokens/blockchain/cosmos.svg"
+      },
+      "bip44": { "coinType": 118 },
+      "bech32Config": {
+        "bech32PrefixAccAddr": "cosmos",
+        "bech32PrefixAccPub": "cosmospub",
+        "bech32PrefixValAddr": "cosmosvaloper",
+        "bech32PrefixValPub": "cosmosvaloperpub",
+        "bech32PrefixConsAddr": "cosmosvalcons",
+        "bech32PrefixConsPub": "cosmosvalconspub"
+      },
+      "currencies": [
+        {
+          "coinDenom": "ATOM",
+          "coinMinimalDenom": "uatom",
+          "coinDecimals": 6,
+          "coinGeckoId": "cosmos",
+          "coinImageUrl": "/tokens/blockchain/cosmos.svg"
+        }
+      ],
+      "feeCurrencies": [
+        {
+          "coinDenom": "ATOM",
+          "coinMinimalDenom": "uatom",
+          "coinDecimals": 6,
+          "coinGeckoId": "cosmos",
+          "coinImageUrl": "/tokens/blockchain/cosmos.svg"
+        }
+      ],
+      "features": ["stargate", "ibc-transfer"],
+      "explorerUrlToTx": "https://www.mintscan.io/cosmos/txs/{txHash}",
+      "gasPriceStep": { "low": 0.01, "average": 0.025, "high": 0.04 }
+    }
+  },
+  {
+    "name": "TERRA_CLASSIC",
     "defaultDecimals": 6,
     "addressPatterns": ["^(terra1)[0-9a-z]{38}$"],
     "feeAssets": [
-      { "blockchain": "TERRA", "symbol": "Luna", "address": null },
-      { "blockchain": "TERRA", "symbol": "UST", "address": null },
-      { "blockchain": "TERRA", "symbol": "TERRA_EUT", "address": null },
-      { "blockchain": "TERRA", "symbol": "KRT", "address": null }
+      { "blockchain": "TERRA_CLASSIC", "symbol": "Lunc", "address": null },
+      { "blockchain": "TERRA_CLASSIC", "symbol": "UST", "address": null },
+      {
+        "blockchain": "TERRA_CLASSIC",
+        "symbol": "TERRA_CLASSIC_EUT",
+        "address": null
+      },
+      { "blockchain": "TERRA_CLASSIC", "symbol": "KRT", "address": null }
     ],
     "logo": "https://api.rango.exchange/blockchains/terra.svg",
     "displayName": "Terra",
@@ -332,70 +400,6 @@
       "features": ["stargate", "ibc-transfer", "no-legacy-stdTx"],
       "explorerUrlToTx": "https://finder.terra.money/columbus-5/tx/{txHash}",
       "gasPriceStep": { "low": 0.0075, "average": 0.0075, "high": 0.0075 }
-    }
-  },
-  {
-    "name": "COSMOS",
-    "defaultDecimals": 6,
-    "addressPatterns": ["^(cosmos1)[0-9a-z]{38}$"],
-    "feeAssets": [
-      { "blockchain": "COSMOS", "symbol": "ATOM", "address": null }
-    ],
-    "logo": "https://api.rango.exchange/blockchains/cosmos.svg",
-    "displayName": "Cosmos",
-    "shortName": "Cosmos",
-    "sort": 8,
-    "color": "#2E3148",
-    "enabled": true,
-    "type": "COSMOS",
-    "chainId": "cosmoshub-4",
-    "info": {
-      "infoType": "CosmosMetaInfo",
-      "experimental": false,
-      "rpc": "https://cosmos-rpc.polkachu.com",
-      "rest": "https://lcd-cosmoshub.keplr.app",
-      "cosmostationLcdUrl": "https://lcd-cosmos.cosmostation.io",
-      "cosmostationApiUrl": "https://api-cosmos.cosmostation.io",
-      "cosmostationDenomTracePath": "/ibc/apps/transfer/v1/denom_traces/",
-      "mintScanName": "cosmos",
-      "chainName": "Cosmos",
-      "stakeCurrency": {
-        "coinDenom": "ATOM",
-        "coinMinimalDenom": "uatom",
-        "coinDecimals": 6,
-        "coinGeckoId": "cosmos",
-        "coinImageUrl": "/tokens/blockchain/cosmos.svg"
-      },
-      "bip44": { "coinType": 118 },
-      "bech32Config": {
-        "bech32PrefixAccAddr": "cosmos",
-        "bech32PrefixAccPub": "cosmospub",
-        "bech32PrefixValAddr": "cosmosvaloper",
-        "bech32PrefixValPub": "cosmosvaloperpub",
-        "bech32PrefixConsAddr": "cosmosvalcons",
-        "bech32PrefixConsPub": "cosmosvalconspub"
-      },
-      "currencies": [
-        {
-          "coinDenom": "ATOM",
-          "coinMinimalDenom": "uatom",
-          "coinDecimals": 6,
-          "coinGeckoId": "cosmos",
-          "coinImageUrl": "/tokens/blockchain/cosmos.svg"
-        }
-      ],
-      "feeCurrencies": [
-        {
-          "coinDenom": "ATOM",
-          "coinMinimalDenom": "uatom",
-          "coinDecimals": 6,
-          "coinGeckoId": "cosmos",
-          "coinImageUrl": "/tokens/blockchain/cosmos.svg"
-        }
-      ],
-      "features": ["stargate", "ibc-transfer"],
-      "explorerUrlToTx": "https://www.mintscan.io/cosmos/txs/{txHash}",
-      "gasPriceStep": { "low": 0.01, "average": 0.025, "high": 0.04 }
     }
   },
   {
@@ -2491,6 +2495,259 @@
       "features": ["stargate", "ibc-transfer"],
       "explorerUrlToTx": "https://www.mintscan.io/axelar/txs/{txHash}",
       "gasPriceStep": { "low": 0.007, "average": 0.007, "high": 0.01 }
+    }
+  },
+  {
+    "name": "KCC",
+    "defaultDecimals": 18,
+    "addressPatterns": ["^(0x)[0-9A-Fa-f]{40}$"],
+    "feeAssets": [{ "blockchain": "KCC", "symbol": "KCS", "address": null }],
+    "logo": "https://api.rango.exchange/blockchains/kcc.png",
+    "displayName": "Kcc",
+    "shortName": "Kcc",
+    "sort": 41,
+    "color": "#ccff00",
+    "enabled": true,
+    "type": "EVM",
+    "chainId": "0x141",
+    "info": {
+      "infoType": "EvmMetaInfo",
+      "chainName": "Kcc Network",
+      "nativeCurrency": { "name": "KCS", "symbol": "KCS", "decimals": 18 },
+      "rpcUrls": ["https://rpc-mainnet.kcc.network/"],
+      "blockExplorerUrls": ["https://explorer.kcc.io/en"],
+      "addressUrl": "https://explorer.kcc.io/en/address/{wallet}",
+      "transactionUrl": "https://explorer.kcc.io/en/tx/{txHash}"
+    }
+  },
+  {
+    "name": "STRIDE",
+    "defaultDecimals": 6,
+    "addressPatterns": ["^(stride1)[0-9a-z]{38}$"],
+    "feeAssets": [
+      { "blockchain": "STRIDE", "symbol": "STRD", "address": null }
+    ],
+    "logo": "https://api.rango.exchange/blockchains/stride.svg",
+    "displayName": "Stride",
+    "shortName": "Stride",
+    "sort": 41,
+    "color": "#D63178",
+    "enabled": true,
+    "type": "COSMOS",
+    "chainId": "stride-1",
+    "info": {
+      "infoType": "CosmosMetaInfo",
+      "experimental": false,
+      "rpc": "https://rpc-stride.keplr.app",
+      "rest": "https://lcd-stride.keplr.app",
+      "cosmostationLcdUrl": "https://lcd-stride.cosmostation.io",
+      "cosmostationApiUrl": "https://api-stride.cosmostation.io",
+      "cosmostationDenomTracePath": "/ibc/apps/transfer/v1/denom_traces/",
+      "mintScanName": "stride",
+      "chainName": "Stride",
+      "stakeCurrency": {
+        "coinDenom": "STRD",
+        "coinMinimalDenom": "ustrd",
+        "coinDecimals": 6,
+        "coinGeckoId": "stride",
+        "coinImageUrl": ""
+      },
+      "bip44": { "coinType": 118 },
+      "bech32Config": {
+        "bech32PrefixAccAddr": "stride",
+        "bech32PrefixAccPub": "stridepub",
+        "bech32PrefixValAddr": "stridevaloper",
+        "bech32PrefixValPub": "stridevaloperpub",
+        "bech32PrefixConsAddr": "stridevalcons",
+        "bech32PrefixConsPub": "stridevalconspub"
+      },
+      "currencies": [
+        {
+          "coinDenom": "STRD",
+          "coinMinimalDenom": "ustrd",
+          "coinDecimals": 6,
+          "coinGeckoId": "stride",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stATOM",
+          "coinMinimalDenom": "stuatom",
+          "coinDecimals": 6,
+          "coinGeckoId": "stride-staked-atom",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stOSMO",
+          "coinMinimalDenom": "stuosmo",
+          "coinDecimals": 6,
+          "coinGeckoId": "stride-staked-osmo",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stJUNO",
+          "coinMinimalDenom": "stujuno",
+          "coinDecimals": 6,
+          "coinGeckoId": "stride-staked-juno",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stSTARS",
+          "coinMinimalDenom": "stustars",
+          "coinDecimals": 6,
+          "coinGeckoId": "",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stEVMOS",
+          "coinMinimalDenom": "staevmos",
+          "coinDecimals": 18,
+          "coinGeckoId": "",
+          "coinImageUrl": ""
+        },
+        {
+          "coinDenom": "stLUNA",
+          "coinMinimalDenom": "stuluna",
+          "coinDecimals": 6,
+          "coinGeckoId": "",
+          "coinImageUrl": ""
+        }
+      ],
+      "feeCurrencies": [
+        {
+          "coinDenom": "STRD",
+          "coinMinimalDenom": "ustrd",
+          "coinDecimals": 6,
+          "coinGeckoId": "stride",
+          "coinImageUrl": ""
+        }
+      ],
+      "features": ["ibc-transfer"],
+      "explorerUrlToTx": "https://www.mintscan.io/stride/txs/{txHash}",
+      "gasPriceStep": { "low": 0.001, "average": 0.0025, "high": 0.04 }
+    }
+  },
+  {
+    "name": "MARS",
+    "defaultDecimals": 6,
+    "addressPatterns": ["^(mars1)[0-9a-z]{38}$"],
+    "feeAssets": [{ "blockchain": "MARS", "symbol": "MARS", "address": null }],
+    "logo": "https://api.rango.exchange/blockchains/mars.svg",
+    "displayName": "Mars",
+    "shortName": "Mars",
+    "sort": 42,
+    "color": "#CB4B3D",
+    "enabled": true,
+    "type": "COSMOS",
+    "chainId": "mars-1",
+    "info": {
+      "infoType": "CosmosMetaInfo",
+      "experimental": false,
+      "rpc": "https://rpc-mars.keplr.app",
+      "rest": "https://lcd-mars.keplr.app",
+      "cosmostationLcdUrl": "https://lcd-mars-protocol.cosmostation.io",
+      "cosmostationApiUrl": "https://api-mars-protocol.cosmostation.io",
+      "cosmostationDenomTracePath": "/ibc/apps/transfer/v1/denom_traces/",
+      "mintScanName": "mars-protocol",
+      "chainName": "Mars",
+      "stakeCurrency": {
+        "coinDenom": "MARS",
+        "coinMinimalDenom": "umars",
+        "coinDecimals": 6,
+        "coinGeckoId": "mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3",
+        "coinImageUrl": "/tokens/blockchain/mars.svg"
+      },
+      "bip44": { "coinType": 118 },
+      "bech32Config": {
+        "bech32PrefixAccAddr": "mars",
+        "bech32PrefixAccPub": "marspub",
+        "bech32PrefixValAddr": "marsvaloper",
+        "bech32PrefixValPub": "marsvaloperpub",
+        "bech32PrefixConsAddr": "marsvalcons",
+        "bech32PrefixConsPub": "marsvalconspub"
+      },
+      "currencies": [
+        {
+          "coinDenom": "MARS",
+          "coinMinimalDenom": "umars",
+          "coinDecimals": 6,
+          "coinGeckoId": "mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3",
+          "coinImageUrl": "/tokens/blockchain/mars.svg"
+        }
+      ],
+      "feeCurrencies": [
+        {
+          "coinDenom": "MARS",
+          "coinMinimalDenom": "umars",
+          "coinDecimals": 6,
+          "coinGeckoId": "mars-protocol-a7fcbcfb-fd61-4017-92f0-7ee9f9cc6da3",
+          "coinImageUrl": "/tokens/blockchain/mars.svg"
+        }
+      ],
+      "features": ["ibc-transfer"],
+      "explorerUrlToTx": "https://www.mintscan.io/mars-protocol/txs/{txHash}",
+      "gasPriceStep": { "low": 0.001, "average": 0.0025, "high": 0.01 }
+    }
+  },
+  {
+    "name": "TERRA",
+    "defaultDecimals": 6,
+    "addressPatterns": ["^(terra1)[0-9a-z]{38}$"],
+    "feeAssets": [{ "blockchain": "TERRA", "symbol": "LUNA", "address": null }],
+    "logo": "https://api.rango.exchange/blockchains/terra.svg",
+    "displayName": "Terra 2.0",
+    "shortName": "Terra 2.0",
+    "sort": 43,
+    "color": "#5493F7",
+    "enabled": true,
+    "type": "COSMOS",
+    "chainId": "phoenix-1",
+    "info": {
+      "infoType": "CosmosMetaInfo",
+      "experimental": false,
+      "rpc": "https://rpc-phoenix.keplr.app",
+      "rest": "https://lcd-phoenix.keplr.app",
+      "cosmostationLcdUrl": "https://phoenix-lcd.terra.dev",
+      "cosmostationApiUrl": null,
+      "cosmostationDenomTracePath": "/ibc/apps/transfer/v1/denom_traces/",
+      "mintScanName": null,
+      "chainName": "Terra 2.0",
+      "stakeCurrency": {
+        "coinDenom": "LUNA",
+        "coinMinimalDenom": "uluna",
+        "coinDecimals": 6,
+        "coinGeckoId": "terra-luna-2",
+        "coinImageUrl": ""
+      },
+      "bip44": { "coinType": 330 },
+      "bech32Config": {
+        "bech32PrefixAccAddr": "terra",
+        "bech32PrefixAccPub": "terrapub",
+        "bech32PrefixValAddr": "terravaloper",
+        "bech32PrefixValPub": "terravaloperpub",
+        "bech32PrefixConsAddr": "terravalcons",
+        "bech32PrefixConsPub": "terravalconspub"
+      },
+      "currencies": [
+        {
+          "coinDenom": "LUNA",
+          "coinMinimalDenom": "uluna",
+          "coinDecimals": 6,
+          "coinGeckoId": "terra-luna-2",
+          "coinImageUrl": ""
+        }
+      ],
+      "feeCurrencies": [
+        {
+          "coinDenom": "LUNA",
+          "coinMinimalDenom": "uluna",
+          "coinDecimals": 6,
+          "coinGeckoId": "terra-luna-2",
+          "coinImageUrl": ""
+        }
+      ],
+      "features": ["cosmwasm", "ibc-transfer"],
+      "explorerUrlToTx": "https://finder.terra.money/mainnet/txs/{txHash}",
+      "gasPriceStep": { "low": 0.0125, "average": 0.015, "high": 0.15 }
     }
   }
 ]
