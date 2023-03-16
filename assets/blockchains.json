@@ -331,7 +331,7 @@
       },
       { "blockchain": "TERRA_CLASSIC", "symbol": "KRT", "address": null }
     ],
-    "logo": "https://api.rango.exchange/blockchains/terra.svg",
+    "logo": "https://api.rango.exchange/blockchains/terraclassic.svg",
     "displayName": "Terra",
     "shortName": "Terra",
     "sort": 8,
@@ -401,27 +401,6 @@
       "explorerUrlToTx": "https://finder.terra.money/columbus-5/tx/{txHash}",
       "gasPriceStep": { "low": 0.0075, "average": 0.0075, "high": 0.0075 }
     }
-  },
-  {
-    "name": "STARKNET",
-    "defaultDecimals": 18,
-    "addressPatterns": ["^(0x)[0-9A-Fa-f]{64}$"],
-    "feeAssets": [
-      {
-        "blockchain": "STARKNET",
-        "symbol": "ETH",
-        "address": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7"
-      }
-    ],
-    "logo": "https://api.rango.exchange/blockchains/starknet.svg",
-    "displayName": "StarkNet",
-    "shortName": "StarkNet",
-    "sort": 8,
-    "color": "#28286E",
-    "enabled": true,
-    "type": "ZK_ROLLUP",
-    "chainId": "SN_MAIN",
-    "info": null
   },
   {
     "name": "FANTOM",
@@ -507,6 +486,34 @@
       "blockExplorerUrls": ["https://www.oklink.com/en/okc"],
       "addressUrl": "https://www.oklink.com/en/okc/address/{wallet}",
       "transactionUrl": "https://www.oklink.com/en/okc/tx/{txHash}"
+    }
+  },
+  {
+    "name": "STARKNET",
+    "defaultDecimals": 18,
+    "addressPatterns": ["^(0x)[0-9A-Fa-f]{32,64}$"],
+    "feeAssets": [
+      {
+        "blockchain": "STARKNET",
+        "symbol": "ETH",
+        "address": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7"
+      }
+    ],
+    "logo": "https://api.rango.exchange/blockchains/starknet.svg",
+    "displayName": "StarkNet",
+    "shortName": "StarkNet",
+    "sort": 11,
+    "color": "#708DD2",
+    "enabled": true,
+    "type": "STARKNET",
+    "chainId": "0x534e5f4d41494e",
+    "info": {
+      "infoType": "StarkNetMetaInfo",
+      "chainName": "StarkNet Mainnet",
+      "nativeCurrency": { "name": "ETH", "symbol": "ETH", "decimals": 18 },
+      "blockExplorerUrls": ["https://starkscan.co"],
+      "addressUrl": "https://starkscan.co/contract/{wallet}",
+      "transactionUrl": "https://starkscan.co/tx/{txHash}"
     }
   },
   {
@@ -712,16 +719,24 @@
     "name": "TRON",
     "defaultDecimals": 18,
     "addressPatterns": ["^T[1-9A-HJ-NP-Za-km-z]{33}$"],
-    "feeAssets": [],
+    "feeAssets": [{ "blockchain": "TRON", "symbol": "TRX", "address": null }],
     "logo": "https://api.rango.exchange/blockchains/tron.svg",
     "displayName": "Tron",
     "shortName": "Tron",
     "sort": 16,
     "color": "#FF060A",
-    "enabled": false,
-    "type": "TRANSFER",
-    "chainId": null,
-    "info": null
+    "enabled": true,
+    "type": "TRON",
+    "chainId": "0x2b6653dc",
+    "info": {
+      "infoType": "EvmMetaInfo",
+      "chainName": "TRON Mainnet",
+      "nativeCurrency": { "name": "TRX", "symbol": "TRX", "decimals": 6 },
+      "rpcUrls": ["https://api.trongrid.io/jsonrpc"],
+      "blockExplorerUrls": ["https://tronscan.org/#"],
+      "addressUrl": "https://tronscan.org/#/address/{wallet}",
+      "transactionUrl": "https://tronscan.org/#/tx/{txHash}"
+    }
   },
   {
     "name": "SIF",
@@ -2693,7 +2708,7 @@
     "defaultDecimals": 6,
     "addressPatterns": ["^(terra1)[0-9a-z]{38}$"],
     "feeAssets": [{ "blockchain": "TERRA", "symbol": "LUNA", "address": null }],
-    "logo": "https://api.rango.exchange/blockchains/terra.svg",
+    "logo": "https://api.rango.exchange/blockchains/terra.png",
     "displayName": "Terra 2.0",
     "shortName": "Terra 2.0",
     "sort": 43,
