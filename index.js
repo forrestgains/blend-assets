@@ -56,7 +56,7 @@ async function getAllTokens() {
       }
     });
     if (gecko) {
-      token.gecko_id = gecko.id;
+      token.geckoId = gecko.id;
     }
     return token;
   });
