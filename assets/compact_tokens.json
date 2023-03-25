@@ -810,6 +810,16 @@
     "geckoId": "usd-coin"
   },
   {
+    "id": "AVAX_CCHAIN_avaxUSDC.0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "blockchain": "AVAX_CCHAIN",
+    "symbol": "avaxUSDC",
+    "image": "https://api.rango.exchange/i/BOEqIA",
+    "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "decimals": 6,
+    "name": "USD Coin",
+    "geckoId": "usd-coin"
+  },
+  {
     "id": "HECO_USDC.0x9362bbef4b8313a8aa9f0c9808b80577aa26b73b",
     "blockchain": "HECO",
     "symbol": "USDC",
