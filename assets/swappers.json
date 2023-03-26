@@ -525,13 +525,6 @@
     "types": ["BRIDGE", "DEX"]
   },
   {
-    "id": "Wormhole",
-    "title": "Wormhole Bridge",
-    "logo": "https://api.rango.exchange/swappers/wormhole.png",
-    "swapperGroup": "Wormhole",
-    "types": ["BRIDGE"]
-  },
-  {
     "id": "Mojito",
     "title": "MojitoSwap",
     "logo": "https://api.rango.exchange/swappers/mojito-swap.png",
