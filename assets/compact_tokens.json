@@ -100,10 +100,10 @@
     "geckoId": "ethereum"
   },
   {
-    "id": "FANTOM_ETH.0x74b23882a30290451a17c44f4f05243b6b58c76d",
+    "id": "FANTOM_FTM_ETH.0x74b23882a30290451a17c44f4f05243b6b58c76d",
     "blockchain": "FANTOM",
-    "symbol": "ETH",
-    "image": "https://api.rango.exchange/i/j9xgdC",
+    "symbol": "FTM_ETH",
+    "image": "https://api.rango.exchange/tokens/ETH/FTM_ETH.png",
     "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
     "decimals": 18,
     "name": "Ethereum",
@@ -810,7 +810,7 @@
     "geckoId": "usd-coin"
   },
   {
-    "id": "AVAX_CCHAIN_USDC.0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "id": "AVAX_CCHAIN_USDC-0XB97EF9EF8734C71904D8002F8B6BC66DD9C48A6E",
     "blockchain": "AVAX_CCHAIN",
     "symbol": "USDC",
     "image": "https://api.rango.exchange/i/FHj2LZ",
