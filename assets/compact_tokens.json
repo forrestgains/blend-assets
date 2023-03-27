@@ -120,16 +120,6 @@
     "geckoId": "ethereum"
   },
   {
-    "id": "OPTIMISM_ETH.0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
-    "blockchain": "OPTIMISM",
-    "symbol": "ETH",
-    "image": "https://api.rango.exchange/i/ZFdCc9",
-    "address": "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000",
-    "decimals": 18,
-    "name": "Ether",
-    "geckoId": "ethereum"
-  },
-  {
     "id": "AURORA_ETH.null",
     "blockchain": "AURORA",
     "symbol": "ETH",
