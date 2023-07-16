@@ -1,7 +1,7 @@
 [
   {
     "TRADING_ENABLED": true,
-    "MIN_PROFIT_AMOUNT": 1,
+    "MIN_PROFIT_AMOUNT": 0.7,
     "MAX_FILL_AMOUNT": 5500,
     "ADDRESS_1": true,
     "ADDRESS_2": true,
