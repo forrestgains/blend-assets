@@ -1,6 +1,7 @@
 [
   {
     "TRADING_ENABLED": true,
+    "MEMPOOL_CHECK": false,
     "MIN_PROFIT_AMOUNT": 0.25,
     "MAX_FILL_AMOUNT": 1500,
     "ADDRESS_1": true,
