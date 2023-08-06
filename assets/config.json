@@ -3,7 +3,7 @@
     "TRADING_ENABLED": true,
     "MEMPOOL_CHECK": false,
     "MIN_PROFIT_AMOUNT": 0.25,
-    "MAX_FILL_AMOUNT": 1500,
+    "MAX_FILL_AMOUNT": 2500,
     "ADDRESS_1": true,
     "ADDRESS_2": true,
     "GAS_MULTIPLIER_MIN_FACTOR": 1.1,
