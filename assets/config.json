@@ -12,6 +12,6 @@
     "POLYGON_MIN_WAIT": 20,
     "POLYGON_MAX_WAIT": 30,
     "OP_MIN_WAIT": 0,
-    "OP_MAX_WAIT": 1
+    "OP_MAX_WAIT": 0
   }
 ]
