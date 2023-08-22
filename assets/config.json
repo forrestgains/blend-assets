@@ -6,6 +6,7 @@
     "ADDRESS_1": true,
     "ADDRESS_2": true,
     "POLYGON_MIN_WAIT": 20,
-    "POLYGON_MAX_WAIT": 30
+    "POLYGON_MAX_WAIT": 30,
+    "WETH_RANGE_PRIORITY": 0.6
   }
 ]
