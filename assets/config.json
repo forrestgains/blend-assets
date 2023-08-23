@@ -7,6 +7,9 @@
     "ADDRESS_2": true,
     "POLYGON_MIN_WAIT": 20,
     "POLYGON_MAX_WAIT": 30,
+    "ZKSYNC_ENABLED": true,
+    "ZKSYNC_MIN_WAIT": 3,
+    "ZKSYNC_MAX_WAIT": 5,
     "WETH_RANGE_PRIORITY": 0.6
   }
 ]
