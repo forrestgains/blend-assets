@@ -10,6 +10,6 @@
     "ZKSYNC_ENABLED": true,
     "ZKSYNC_MIN_WAIT": 3,
     "ZKSYNC_MAX_WAIT": 5,
-    "WETH_RANGE_PRIORITY": 0.6
+    "WETH_RANGE_PRIORITY": 0.3
   }
 ]
