@@ -2,7 +2,7 @@
   {
     "TRADING_ENABLED": true,
     "MIN_PROFIT_AMOUNT": 0.25,
-    "MAX_FILL_AMOUNT": 3250,
+    "MAX_FILL_AMOUNT": 4500,
     "ADDRESS_1": true,
     "ADDRESS_2": true,
     "POLYGON_MIN_WAIT": 20,
